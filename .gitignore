@@ -1,0 +1,20 @@
+# Xilinx ISE generated files
+*.spl
+*.sym
+*.jhd
+*.lso
+*.ngr
+*.log
+*.cmd_log
+*.restore
+*.ise_backup
+
+# Xilinx generated directories
+_xmsgs/
+xlnx_auto_0_xdb/
+iseconfig/
+
+# Temporary files
+*.tmp
+*.bak
+*~
