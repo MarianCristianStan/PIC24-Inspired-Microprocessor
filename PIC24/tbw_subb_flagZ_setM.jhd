@@ -1,0 +1,3 @@
+MODULE tbw_subb_flagZ_setM
+SUBMODULE PIC24
+INSTANCE UUT

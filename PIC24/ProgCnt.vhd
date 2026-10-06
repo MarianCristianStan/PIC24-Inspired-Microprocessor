@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:   
+-- Create Date:    20:15:13 04/01/2023 
 -- Design Name: 
 -- Module Name:    ProgCnt - Behavioral 
 -- Project Name: 
@@ -28,18 +28,16 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity ProgCnt is
-    Port ( 
-		Clk : in  STD_LOGIC;
-		New_PC : in  STD_LOGIC_VECTOR (5 downto 0);
-      PC : out  STD_LOGIC_VECTOR (5 downto 0):= "000000"
-		);
+    Port ( Clk : in  STD_LOGIC;
+           New_PC : in  STD_LOGIC_VECTOR (5 downto 0);
+           PC : out  STD_LOGIC_VECTOR (5 downto 0):= b"000000");
 end ProgCnt;
 
 architecture Behavioral of ProgCnt is
 
 begin
+PC <= New_PC when rising_edge(Clk);
 
-	PC <= New_PC when rising_edge(Clk);
 
 end Behavioral;
 

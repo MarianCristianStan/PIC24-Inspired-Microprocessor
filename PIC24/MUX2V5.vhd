@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:   
+-- Create Date:    11:12:18 11/16/2023 
 -- Design Name: 
 -- Module Name:    MUX2V5 - Behavioral 
 -- Project Name: 
@@ -28,7 +28,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity MUX2V5 is
-    Port ( I0 : in  STD_LOGIC_VECTOR (3 downto 0);
+    Port ( IO : in  STD_LOGIC_VECTOR (3 downto 0);
            I1 : in  STD_LOGIC_VECTOR (3 downto 0);
            Sel : in  STD_LOGIC;
            Y : out  STD_LOGIC_VECTOR (3 downto 0));
@@ -38,6 +38,6 @@ architecture Behavioral of MUX2V5 is
 
 begin
 
-    Y <= I0 when Sel ='0' else I1; 
-
+	Y <= IO when Sel = '0' else I1;
 end Behavioral;
+

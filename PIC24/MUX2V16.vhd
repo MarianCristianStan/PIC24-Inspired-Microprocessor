@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    15:43:30 11/12/2022 
+-- Create Date:    21:36:34 04/01/2023 
 -- Design Name: 
 -- Module Name:    MUX2V16 - Behavioral 
 -- Project Name: 
@@ -35,10 +35,11 @@ entity MUX2V16 is
 end MUX2V16;
 
 architecture Behavioral of MUX2V16 is
-
+	
+	
 begin
 
-Y <= I0 when Sel = '0' else I1;
+   Y <= I0 when Sel = '0' else I1;
 
 end Behavioral;
 

@@ -1,20 +1,41 @@
-# Xilinx ISE generated files
-*.spl
-*.sym
-*.jhd
-*.lso
-*.ngr
+# Xilinx ISE generated
+*.ngc
+*.ngd
+*.ncd
+*.pcf
+*.bld
+*.mrp
+*.par
+*.pad
+*.unroutes
+*.map
+*.twr
+*.twx
+*.xrpt
+
+*.bit
+*.bin
+*.mcs
+
 *.log
-*.cmd_log
-*.restore
-*.ise_backup
+*_summary.html
+*_summary.xml
 
-# Xilinx generated directories
 _xmsgs/
+xst/
+isim/
 xlnx_auto_0_xdb/
-iseconfig/
 
-# Temporary files
-*.tmp
+# ModelSim generated
+work/
+transcript
+vsim.wlf
+*.wlf
+wlft*
+
+# Backup/temp
 *.bak
+*.restore
 *~
+Thumbs.db
+Desktop.ini
